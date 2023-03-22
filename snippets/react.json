@@ -1,0 +1,45 @@
+{
+  "imrs": {
+    "prefix": "imrs",
+    "body": [
+      "import styles from './${1}${TM_FILENAME_BASE}.module.scss'"
+    ]
+  },
+  "useS": {
+    "prefix": "useS",
+    "body": [
+      "const [${1}, set${2}] = useState<${3}>(${4})"
+    ]
+  },
+  "useR": {
+    "prefix": "useR",
+    "body": [
+      "const ${1}Ref = useRef<${3}>(null)"
+    ]
+  },
+  "useCb": {
+    "prefix": "useCb",
+    "body": [
+      "const ${1} = useCallback(() => {",
+      "${2}",
+      "}, [$3])"
+    ]
+  },
+  "useM": {
+    "prefix": "useR",
+    "body": [
+      "const ${1} = useMemo(() => {",
+      "${2}",
+      "return ${3}",
+      "}, [$4])"
+    ]
+  },
+  "useE": {
+    "prefix": "useE",
+    "body": [
+      "useEffect(() => {",
+      "${1}",
+      "}, [${2}]",
+    ]
+  }
+}
